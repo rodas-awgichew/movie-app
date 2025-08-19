@@ -60,10 +60,11 @@ function searchMovies(query) {
 }
 
 
+// Trigger search on button click
 searchBtn.addEventListener('click', () => {
-
+  const query = searchInput.value.trim();
+  searchMovies(query);
 });
-
 
 
 
