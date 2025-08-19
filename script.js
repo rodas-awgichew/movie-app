@@ -66,6 +66,12 @@ searchBtn.addEventListener('click', () => {
   searchMovies(query);
 });
 
-
+// Trigger search on input (live search)
+searchInput.addEventListener('input', () => {
+  const query = searchInput.value.trim();
+  if (query.length > 2) {
+    searchMovies(query);
+  }
+});
 
 document.addEventListener('DOMContentLoaded', loadMovies);
