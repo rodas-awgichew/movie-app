@@ -7,6 +7,7 @@ function loadMovies() {
   fetch('https://yts.mx/api/v2/list_movies.json?limit=20')
     .then(res => res.json())
     .then(data => {
+      console.log(data);
       movieContainer.innerHTML = '';
       const movies = data.data.movies;
 
@@ -17,8 +18,12 @@ function loadMovies() {
           <img src="${movie.medium_cover_image}" alt="${movie.title}" />
           <h3>${movie.title}</h3>
           <p>Rating: ${movie.rating}</p>
+          <a href="details.html?id=${movie.id}">View Details</a>
+
+
         `;
         movieContainer.appendChild(card);
+      
       });
     })
     .catch(error => {

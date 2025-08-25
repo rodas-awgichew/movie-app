@@ -53,3 +53,68 @@ body {
     padding: 10px;
     font-size: 1rem;
   } 
+  #movieTitle {
+    text-align: center;
+  }
+
+  .details-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    padding-left: 5rem;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .details-container img {
+    min-width: 400px;
+    border-radius: 8px;
+  }
+  
+  .description {
+    flex: 1;
+    min-width: 300px;
+    margin-top: 100px;
+  }
+  
+  .download button {
+    margin: 0.5rem 0;
+    background-color: #0078D4;
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 4px;
+    margin-right: 10px;
+  
+  }
+  
+  .download a {
+    color: white;
+    text-decoration: none;
+  }
+  @media (max-width: 600px) {
+    .details-container {
+      flex-direction: column;
+      padding: 1rem;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  
+  button{
+    margin:2rem;
+    padding: 0.7rem;
+  }
+
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+
+  .actions button {
+    color: #fff;
+    background-color: #0078D4;
+    margin-top: 1rem;
+  }

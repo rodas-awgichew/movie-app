@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="window.history.back()">← Back</button>
+
+
+    <h1 id="movieTitle">Loading...</h1>
+    <div class="details-container">
+        
+        <div> 
+            <img id="moviePoster" src="" alt="Movie Poster" />
+        </div>
+        <div class="description">
+        <p id="movieDescription"></p>
+        <p><strong>Year:</strong> <span id="year"></span></p>
+        <p><strong>Genres:</strong> <span id="movieGenres"></span></p>
+        <p><strong>Runtime:</strong> <span id="runtime"></span></p>
+        <p><strong>Language:</strong> <span id="language"></span></p>
+        <p><strong>Rating:</strong> <span id="movieRating"></span></p>
+        
+
+        <div class="download">
+           <a id="download1" target="_blank"></a>
+        <a id="download2" target="_blank"></a>
+        </div>
+
+        <div class="actions">
+            <button onclick="addToFavorites()">❤️ Add to Favorites</button>
+           
+          </div>
+
+      </div>
+    </div>
+      <script src="details.js"></script>
+    
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Details</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #fff;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .poster {
+      max-width: 300px;
+      border-radius: 8px;
+    }
+    .details {
+      flex: 1;
+      min-width: 300px;
+    }
+    h1 {
+      margin-top: 0;
+    }
+    .metadata p {
+      margin: 0.3rem 0;
+    }
+    iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+    .description {
+      margin-top: 1rem;
+      max-height: 100px;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .description.expanded {
+      max-height: 500px;
+    }
+    .download button {
+      margin: 0.5rem 0;
+      padding: 0.5rem 1rem;
+      background-color: #1f1f1f;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+    }
+    .actions {
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    .dark-mode {
+      background-color: #fff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="" alt="Movie Poster" class="poster" />
+    <div class="details">
+      <h1 id="title">Movie Title</h1>
+      <div class="metadata">
+        <p><strong>Year:</strong> <span id="year">2025</span></p>
+        <p><strong>Genre:</strong> <span id="genre">Drama, Thriller</span></p>
+        <p><strong>Runtime:</strong> <span id="runtime">120 minutes</span></p>
+        <p><strong>Language:</strong> <span id="language">English</span></p>
+        <p><strong>Rating:</strong> <span id="mpaRating">PG-13</span></p>
+        <p><strong>IMDb:</strong> <span id="imdb">7.8</span></p>
+      </div>
+      <iframe src="https://www.youtube.com/embed/sampleTrailer" frameborder="0" allowfullscreen></iframe>
+      <div class="description" id="movieDescription">
+        <p></p>
+      </div>
+      <button onclick="toggleDescription()">Read More</button>
+      <div class="download">
+        <h3>Download Options</h3>
+        <button><a href="torrent1.url" target="_blank">720p - WEB - 1.2GB</a></button>
+        <button><a href="torrent2.url" target="_blank">1080p - WEB - 2.4GB</a></button>
+      </div>
+      <div class="actions">
+        <button onclick="addToFavorites()">❤️ Add to Favorites</button>
+        <button onclick="toggleTheme()">🌗 Toggle Dark Mode</button>
+        <button onclick="window.history.back()">← Back</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Built by Rodas Awgichew • Powered by YTS API</p>
+  </footer>
+
+ 
+</body>
+</html> -->
+
