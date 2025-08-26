@@ -16,7 +16,6 @@ if (favoriteIds.length === 0) {
           <h3>${movie.title}</h3>
           <p>Rating: ${movie.rating}</p>
           <button onclick="removeFavorite(${id})">Remove</button>
-
         `;
         favoritesContainer.appendChild(card);
       })
