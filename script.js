@@ -18,7 +18,7 @@ function loadMovies() {
           <img src="${movie.medium_cover_image}" alt="${movie.title}" />
           <h3>${movie.title}</h3>
           <p>Rating: ${movie.rating}</p>
-          <a href="details.html?id=${movie.id}">View Details</a>
+          <a href="details.html?id=${movie.id}" class="details-btn">View Details</a>
 
 
         `;

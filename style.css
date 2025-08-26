@@ -23,15 +23,63 @@ body {
     border: none;
   }
   
+ 
   button {
-    padding: 10px 15px;
-    margin-left: 10px;
-    background-color: #e50914;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #e50914b0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #b00610;
+  transform: scale(1.05);
+}
+
+input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1f1f1f;
+  color: #fff;
+  box-shadow: 0 0 5px #e509148f;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #e50914;
+}
+
+#fav {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+.details-btn {
+  display: inline-block;
+  margin: 10px auto 15px;
+  padding: 8px 16px;
+  background-color: #481013;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.details-btn:hover {
+  background-color: #b00610;
+  transform: scale(1.05);
+}
+
 
   
   #movieContainer {
@@ -39,28 +87,65 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 20px;
     padding: 20px;
+     background-color: #1f1f1f;
   }
   
   .movie-card {
-    background-color: #1f1f1f;
-    border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
     overflow: hidden;
-    text-align: center;
-  }
-  
-  .movie-card img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .movie-card h3 {
-    padding: 10px;
-    font-size: 1rem;
-  } 
-  #movieTitle {
-    text-align: center;
-  }
+  text-align: center;
+}
 
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.movie-card:hover img {
+  opacity: 0.9;
+}
+
+.movie-card h3 {
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.movie-card p {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.movie-card button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.movie-card button:hover {
+  background-color: #b00610;
+}
   .details-container {
     display: flex;
     flex-wrap: wrap;
