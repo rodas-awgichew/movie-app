@@ -1,0 +1,38 @@
+const favoritesContainer = document.getElementById('favoritesContainer');
+const favoriteIds = JSON.parse(localStorage.getItem('favorites')) || [];
+
+if (favoriteIds.length === 0) {
+  favoritesContainer.innerHTML = '<p>You haven’t added any favorites yet.</p>';
+} else {
+  favoriteIds.forEach(id => {
+    fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)
+      .then(res => res.json())
+      .then(data => {
+        const movie = data.data.movie;
+        const card = document.createElement('div');
+        card.classList.add('movie-card');
+        card.innerHTML = `
+          <img src="${movie.medium_cover_image}" alt="${movie.title}" />
+          <h3>${movie.title}</h3>
+          <p>Rating: ${movie.rating}</p>
+          <button onclick="removeFavorite(${movie.id})">Remove</button>
+        `;
+        favoritesContainer.appendChild(card);
+      })
+      .catch(error => {
+        console.error(`Error loading movie ${id}:`, error);
+      });
+  });
+}
+
+function removeFavorite(id) {
+  const updatedFavorites = favoriteIds.filter(favId => favId !== id);
+  localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+  location.reload(); // Refresh to update the list
+}
+
+const actionsDiv = document.querySelector('.actions');
+actionsDiv.innerHTML = `
+  <button onclick="addToFavorites(this)" data-id="${movie.id}">❤️ Add to Favorites</button>
+`;
+
