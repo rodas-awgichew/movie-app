@@ -28,11 +28,18 @@ fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${movieId}`)
         link.href = torrent.url;
         link.textContent = `Download .torrent (${torrent.quality}, ${torrent.type})`;
         link.target = '_blank';
-        btn.appendChild(link);
+
+          btn.appendChild(link);
         downloadDiv.appendChild(btn);
+
       });
       
+      
+
+      
   })
+
+  
   .catch(error => {
     console.error('Error fetching movie details:', error);
     document.querySelector('.details-container').innerHTML = `
