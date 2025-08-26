@@ -118,3 +118,31 @@ body {
     background-color: #0078D4;
     margin-top: 1rem;
   }
+
+
+  .movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.movie-card {
+  background-color: #1f1f1f;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+}
+.movie-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+.movie-card button {
+  margin-top: 0.5rem;
+  background-color: #0078D4;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}

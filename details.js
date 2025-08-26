@@ -39,27 +39,25 @@ fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${movieId}`)
       <p style="color:red;">Oops! Something went wrong. Try refreshing the page or check your internet connection.</p>`;
   });
 
-  function toggleDescription() {
-    const desc = document.getElementById('movieDescription');
-    desc.classList.toggle('expanded');
-  }
 
-  function addToFavorites() {
-    const movieId = 'sample-id';
-    const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-    if (!favorites.includes(movieId)) {
-      favorites.push(movieId);
-      localStorage.setItem('favorites', JSON.stringify(favorites));
-      alert('Added to favorites!');
-    } else {
-      alert('Already in favorites!');
-    }
-  }
 
-  function toggleTheme() {
-    document.body.classList.toggle('dark-mode');
+  function addToFavorites(button) {
+  const movieId = button.getAttribute('data-id');
+  const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+  if (!favorites.includes(movieId)) {
+    favorites.push(movieId);
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+    button.textContent = '❤️ Added';
+    button.disabled = true;
+  } else {
+    alert('Already in favorites!');
   }
+}
+
+
   
+
  
  
 

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Favorite Movies</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button onclick="window.history.back()">← Back</button>
+  <h1>My Favorite Movies</h1>
+  <div id="favoritesContainer" class="movie-list"></div>
+
+  <script src="favorites.js"></script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favorite Movies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #181818;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #242424;
+            padding: 1rem;
+            text-align: center;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+        .movies-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .movie-card {
+            background: #222;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            width: 220px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+        .movie-poster {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            background: #333;
+        }
+        .movie-title {
+            font-size: 1.2rem;
+            margin: 1rem 0 0.5rem 0;
+        }
+        .movie-year {
+            color: #aaa;
+            margin-bottom: 1rem;
+        }
+        .remove-btn {
+            background: #e50914;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 1rem;
+            transition: background 0.2s;
+        }
+        .remove-btn:hover {
+            background: #b00610;
+        }
+        @media (max-width: 600px) {
+            .movies-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                padding: 1rem;
+            }
+            .movie-card {
+                width: 90vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        My Favorite Movies
+    </header>
+    <main>
+        <div class="movies-container" id="favorites-list">
+            <!-- Favorite movies will be rendered here -->
+        </div>
+    </main>
+    <script>
+        // Example favorite movies data
+        const favoriteMovies = [
+            {
+                title: "Inception",
+                year: 2010,
+                poster: "https://m.media-amazon.com/images/I/51oDg9QyJrL._AC_.jpg"
+            },
+            {
+                title: "The Shawshank Redemption",
+                year: 1994,
+                poster: "https://m.media-amazon.com/images/I/51NiGlapXlL._AC_.jpg"
+            },
+            {
+                title: "Interstellar",
+                year: 2014,
+                poster: "https://m.media-amazon.com/images/I/71n58sHkJzL._AC_SY679_.jpg"
+            }
+        ];
+
+        function renderFavorites() {
+            const container = document.getElementById('favorites-list');
+            container.innerHTML = '';
+            if (favoriteMovies.length === 0) {
+                container.innerHTML = '<p>No favorite movies added yet.</p>';
+                return;
+            }
+            favoriteMovies.forEach((movie, idx) => {
+                const card = document.createElement('div');
+                card.className = 'movie-card';
+                card.innerHTML = `
+                    <img class="movie-poster" src="${movie.poster}" alt="${movie.title} Poster">
+                    <div class="movie-title">${movie.title}</div>
+                    <div class="movie-year">${movie.year}</div>
+                    <button class="remove-btn" onclick="removeFavorite(${idx})">Remove</button>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function removeFavorite(index) {
+            favoriteMovies.splice(index, 1);
+            renderFavorites();
+        }
+
+        renderFavorites();
+    </script>
+</body>
+</html> -->
