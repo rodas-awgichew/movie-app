@@ -15,7 +15,8 @@ if (favoriteIds.length === 0) {
           <img src="${movie.medium_cover_image}" alt="${movie.title}" />
           <h3>${movie.title}</h3>
           <p>Rating: ${movie.rating}</p>
-          <button onclick="removeFavorite(${movie.id})">Remove</button>
+          <button onclick="removeFavorite(${id})">Remove</button>
+
         `;
         favoritesContainer.appendChild(card);
       })
@@ -26,9 +27,13 @@ if (favoriteIds.length === 0) {
 }
 
 function removeFavorite(id) {
-  const updatedFavorites = favoriteIds.filter(favId => favId !== id);
+  const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
+  const updatedFavorites = storedFavorites.filter(favId => Number(favId) !== Number(id));
   localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
-  location.reload(); // Refresh to update the list
+  location.reload();
 }
+
+
+
 
 

@@ -36,7 +36,7 @@ fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${movieId}`)
     // ❤️ Add to Favorites button
     const favoriteButton = document.createElement('button');
     favoriteButton.textContent = 'Add to Favorites';
-    favoriteButton.setAttribute('data-id', movieId);
+    favoriteButton.setAttribute('data-id', movie.id);
     // favoriteButton.classList.add('favorite-btn');
 
     // Check if already in favorites
