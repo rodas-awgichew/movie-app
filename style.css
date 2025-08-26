@@ -11,6 +11,10 @@ body {
     text-align: center;
     background-color: #1f1f1f;
   }
+  #fav{
+   
+    text-decoration: none;
+  }
   
   input {
     padding: 10px;

@@ -31,8 +31,4 @@ function removeFavorite(id) {
   location.reload(); // Refresh to update the list
 }
 
-const actionsDiv = document.querySelector('.actions');
-actionsDiv.innerHTML = `
-  <button onclick="addToFavorites(this)" data-id="${movie.id}">❤️ Add to Favorites</button>
-`;
 
