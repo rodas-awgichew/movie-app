@@ -23,38 +23,14 @@ Movie App is a modern web application that allows users to search, discover, and
 - **Authentication:** JWT / OAuth (if implemented)
 - **Deployment:** Vercel, Netlify, or Heroku (specify actual deployment platform)
 
-## Setup Instructions
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/rodas-awgichew/movie-app.git
-   cd movie-app
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-3. **API Key Configuration:**
+API Key Configuration:
    - Obtain an API key from [TMDb](https://www.themoviedb.org/) or your chosen provider.
    - Create a `.env` file in the root directory and add:
      ```env
      REACT_APP_API_KEY=your_api_key_here
      ```
-
-4. **Run the app locally:**
-   ```bash
-   npm start
-   # or
-   yarn start
-   ```
-
-5. **Open in your browser:**  
-   Navigate to [http://localhost:3000](http://localhost:3000) (or the configured port).
-
+     
 ## Folder Structure
 
 ```
