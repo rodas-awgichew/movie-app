@@ -57,6 +57,4 @@ Feel free to check [issues](https://github.com/rodas-awgichew/movie-app/issues) 
 
 This project is licensed under the MIT License.
 
----
 
-**Enjoy exploring movies with Movie App!**
