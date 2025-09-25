@@ -12,7 +12,7 @@ Movie App is a modern web application that allows users to search, discover, and
 - **User Authentication:** Sign up, log in, and manage your favorite list (if implemented).
 - **Responsive Design:** Works perfectly on desktop, tablet, and mobile devices.
 - **API Integration:** Fetches up-to-date data from a reliable movie database API.
-- **Dark Mode Support:** Easy on the eyes with a built-in dark mode (if implemented).
+- **Dark Mode Support:** Easy on the eyes with a built-in dark mode.
 
 ## Technologies Used
 
