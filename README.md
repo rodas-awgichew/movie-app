@@ -45,11 +45,6 @@ movie-app/
 └── README.md
 ```
 
-## Contributing
-
-Contributions, issues, and feature requests are welcome!  
-Feel free to check [issues](https://github.com/rodas-awgichew/movie-app/issues) and submit a pull request.
-
 
 ## License
 
