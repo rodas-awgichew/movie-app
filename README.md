@@ -19,7 +19,7 @@ Movie App is a modern web application that allows users to search, discover, and
 - **Frontend:** React.js 
 - **Styling:** CSS3, styled-components
 - **API:** [The Movie Database (TMDb)](https://www.themoviedb.org/) API
-- **Deployment:** Vercel, Netlify, or Heroku (specify actual deployment platform)
+- **Deployment:** Vercel 
 
 
 API Key Configuration:
