@@ -2,7 +2,7 @@
 
 ## Overview
 
-Movie App is a modern web application that allows users to search, discover, and explore movies and TV shows. The app provides detailed information including ratings, synopses, trailers, and cast information. Built with a focus on user experience, responsive design, and seamless interaction, Movie App is perfect for film enthusiasts and casual browsers alike.
+Movie App is a modern web application that allows users to search, discover, and explore movies and TV shows. The app provides detailed information including ratings, synopses, trailers, and cast information. Built with a focus on user experience, responsive design, and seamless interaction.
 
 ## Features
 
