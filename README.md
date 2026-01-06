@@ -9,7 +9,6 @@ Movie App is a modern web application that allows users to search, discover, and
 - Browse and Search: Search for movies and TV shows by title, genre, or year.
 - Detailed Movie Pages: View cast, crew, ratings, and trailers.
 - Trending & Popular: Explore trending movies, popular picks, and new releases.
-- User Authentication: Sign up, log in, and manage your favorite list.
 - Responsive Design: Works perfectly on desktop, tablet, and mobile devices.
 - API Integration: Fetches up-to-date data from a reliable movie database API.
 
