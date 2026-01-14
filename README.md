@@ -44,7 +44,6 @@ movie-app/
 └── README.md
 ```
 
-
 ## License
 
 This project is licensed under the MIT License.
